@@ -76,10 +76,20 @@ async function busca() {
   }
 }
 
+const daoAlumno =
+  getFirestore().
+    collection("Alumno");
+const params =
+  new URL(location.href).
+    searchParams;
+const id = params.get("id");
+
+
 /** @param {Event} evt */
 async function guarda(evt) {
   await guardaUsuario(evt,
     new FormData(forma), id);
+    const matricula = getString(formData, "matricula").trim();
 }
 
 async function elimina() {
@@ -96,13 +106,13 @@ async function elimina() {
   }
 }
 
-async function guarda(evt) {
+/*async function guarda(evt) {
   try {
     evt.preventDefault();
     const formData =
       new FormData(forma);
     const matricula = getString(formData, "matricula").trim();  
-    /**
+    /** */
      * @type {
         import("./tipos.js").
                 Alumno} */

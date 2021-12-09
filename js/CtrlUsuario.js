@@ -55,10 +55,8 @@ async function busca() {
     if (doc.exists) {
       const data = doc.data();
       forma.cue.value = id || "";
-      forma.matricula.value = data.matricula;  
       img.src =
         await urlStorage(id);
-      
       selectAlumnos(
         forma.alumnoId,
         data.alummnoId)
@@ -75,15 +73,6 @@ async function busca() {
     muestraUsuarios();
   }
 }
-
-const daoAlumno =
-  getFirestore().
-    collection("Alumno");
-const params =
-  /*new URL(location.href).*/
-    searchParams;
-const id = params.get("id");
-
 
 /** @param {Event} evt */
 async function guarda(evt) {

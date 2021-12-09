@@ -80,7 +80,7 @@ const daoAlumno =
   getFirestore().
     collection("Alumno");
 const params =
-  new URL(location.href).
+  /*new URL(location.href).*/
     searchParams;
 const id = params.get("id");
 
@@ -89,7 +89,6 @@ const id = params.get("id");
 async function guarda(evt) {
   await guardaUsuario(evt,
     new FormData(forma), id);
-    const matricula = getString(formData, "matricula").trim();
 }
 
 async function elimina() {
@@ -101,28 +100,6 @@ async function elimina() {
       await eliminaStorage(id);
       muestraUsuarios();
     }
-  } catch (e) {
-    muestraError(e);
-  }
-}
-
-/*async function guarda(evt) {
-  try {
-    evt.preventDefault();
-    const formData =
-      new FormData(forma);
-    const matricula = getString(formData, "matricula").trim();  
-    /** */
-     * @type {
-        import("./tipos.js").
-                Alumno} */
-    const modelo = {
-      matricula
-    };
-    await daoAlumno.
-      doc(id).
-      set(modelo);
-    muestraAlumnos();
   } catch (e) {
     muestraError(e);
   }

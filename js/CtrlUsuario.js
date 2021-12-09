@@ -55,8 +55,10 @@ async function busca() {
     if (doc.exists) {
       const data = doc.data();
       forma.cue.value = id || "";
+      forma.matricula.value = data.matricula;  
       img.src =
         await urlStorage(id);
+      
       selectAlumnos(
         forma.alumnoId,
         data.alummnoId)
@@ -94,3 +96,24 @@ async function elimina() {
   }
 }
 
+async function guarda(evt) {
+  try {
+    evt.preventDefault();
+    const formData =
+      new FormData(forma);
+    const matricula = getString(formData, "matricula").trim();  
+    /**
+     * @type {
+        import("./tipos.js").
+                Alumno} */
+    const modelo = {
+      matricula
+    };
+    await daoAlumno.
+      doc(id).
+      set(modelo);
+    muestraAlumnos();
+  } catch (e) {
+    muestraError(e);
+  }
+}

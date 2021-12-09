@@ -5,13 +5,13 @@
 
 /**
  * @typedef {Object} Alumno
- * @property {string} nombre
+ * @property {string} nombre1
  */
 
 /**
  * @typedef {Object} Usuario
  * @property {string[]} rolIds
- * @property {string} alumnoId
+ * @property {string} nombre
  */
 
 // @ts-nocheck

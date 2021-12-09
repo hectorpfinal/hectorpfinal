@@ -54,7 +54,7 @@ async function busca() {
       get();
     if (doc.exists) {
       const data = doc.data();
-      forma.cue.value = id || "";
+      forma.matricula.value = id || "";
       img.src =
         await urlStorage(id);
       selectAlumnos(

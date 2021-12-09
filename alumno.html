@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,
+       initial-scale=1.0">
+  <title>Alumno</title>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js">
+    </script>
+  <script src="js/init.js">
+  </script>
+  <script type="module"
+    src="cmp/mi-nav.js">
+    </script>
+  <script type="module"
+    src="cmp/mi-footer.js">
+  </script> 
+  </script>
+  <link rel="stylesheet"
+    href="css/estilos.css">
+
+</head>
+<body>
+  <form name="forma">
+    <mi-nav></mi-nav>
+    <header>
+      <h1>Paciente</h1>
+      <mi-progreso>
+      </mi-progreso>
+    </header>
+    <p>
+      <label>
+        Nombre
+        <input name="nombre"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Apellidos
+        <input name="apellidos"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        CURP
+        <input name="curp"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Teléfono
+        <input name="telefono"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Fecha y Hora
+        <input name="fecha" type="datetime-local" required disabled="">
+      </label>
+    </p>
+    <p>
+      <label>
+        Doctor Que Lo Atiende<br>
+        <input name="doctores" type="text" required list="doctores" disabled="">
+      </label>
+      <br><output id="salidaNavegador"></output>
+    </p>
+    <p>
+      <label>
+        Motivo de cita
+        <input name="cita"
+          type="text" required disabled="">
+      </label>
+    </p>
+    <div class="herramientas">
+      <a href="alumnos.html">
+        Cancelar</a>
+      <button>Guardar</button>
+      <!--<button name="eliminar"
+        type="button">
+        Eliminar
+      </button>-->
+    </div>
+    <mi-footer></mi-footer>
+  </form>
+  <datalist id="doctores">
+    <option value="Internet Explorer">
+    <option value="Safari">
+    <option value="Chrome">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Opera">
+  </datalist>
+  <script type="module"
+    src="js/CtrlAlumno.js">
+    </script>
+</body>
+</html>
+

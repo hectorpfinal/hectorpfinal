@@ -1,0 +1,30 @@
+
+/*mi-nav {
+  display: block;
+  background-color:
+    var(--colorMiNav);
+}*/
+
+mi-nav ul {
+	background-color: black;
+	width: 100%;
+	list-style-type: none;
+	text-align: right;
+}
+
+mi-nav ul li {
+	display: inline-flex;
+}
+
+mi-nav a {
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	width: 100px;
+}
+
+mi-nav li:hover {
+	text-decoration-color: grey;
+}
+
+

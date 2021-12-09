@@ -50,12 +50,11 @@
  <form name="forma">
     <mi-nav></mi-nav>
     <header>
-      <h1>Sesión</h1>
       <div class="herramientas">
         <button
           type="button"
           name="terminarSesión">
-          Terminar Sesión
+          Cerrar Sesión 
         </button>
       </div>
     </header>
@@ -65,7 +64,7 @@
     </figure>
     <p>
       <label>
-        Email
+        Email 
         <output name="email">
           <mi-progreso>
           </mi-progreso>
@@ -79,8 +78,16 @@
           <mi-progreso>
           </mi-progreso>
         </output>
-      </label>
+    <div class=caja>
+      <h1>Próxima Cita</h1>
+      <p>Tu próxima cita será el: </p>
+      <p>Fecha:<br><output id="salidaFecha"></output></p>
+      <p>Hora:<output id="salidaHora"></output></p>
+      <p>Doctor:<output id="salidaDoctor"></output></p>
+    </div>
+      </label>   
     </p>
+
     <mi-footer></mi-footer>
   </form>
   <script type="module"

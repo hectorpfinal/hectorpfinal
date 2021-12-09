@@ -70,14 +70,14 @@
       <label>
         Fecha y Hora
         <input name="fechayhora"
-          type="text" required>
+          type="datetime-local" required>
       </label>
     </p>
     <p>
       <label>
         Doctor 
         <input name="doctor"
-          type="date" required>
+          type="date" require list="doctores"d>
       </label>
     </p>
     <p>
@@ -139,6 +139,14 @@
     </fieldset>-->
     <mi-footer></mi-footer>
   </form>
+  <datalist id="doctor">
+    <option value="Internet Explorer">
+    <option value="Safari">
+    <option value="Chrome">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Opera">
+  </datalist>
   <script type="module"
     src="js/CtrlUsuarioNuevo.js">
     </script>

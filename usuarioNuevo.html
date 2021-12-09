@@ -37,25 +37,25 @@
     <mi-nav></mi-nav>
     <header>
       <h1>Usuario Nuevo</h1>
-      <div class="herramientas">
-        <a href="usuarios.html">
-          Cancelar</a>
-        <button type="submit">
-          Guardar
-        </button>
-      </div>
     </header>
     <p>
       <label>
-        Matricula
-        <input name="matricula"
+        Nombre
+        <input name="nombre"
           type="text" required>
       </label>
     </p>
     <p>
       <label>
-        Nombre
-        <input name="nombre"
+        Apellido
+        <input name="apellido"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        CURP
+        <input name="curp"
           type="text" required>
       </label>
     </p>
@@ -68,15 +68,22 @@
     </p>
     <p>
       <label>
-        Grupo
-        <input name="grupo"
+        Fecha y Hora
+        <input name="fechayhora"
           type="text" required>
       </label>
     </p>
     <p>
       <label>
-        Fecha
-        <input name="fecha"
+        Doctor 
+        <input name="doctor"
+          type="date" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Motivo de la cita 
+        <input name="motivo"
           type="date" required>
       </label>
     </p>
@@ -89,12 +96,19 @@
     </p>
     <p>
       <label>
-        Avatar
+        Foto del Paciente
         <input name="avatar"
           type="file" required
           accept=".png,.jpg,.jpeg,.gif">
       </label>
     </p>
+    <div class="herramientas">
+      <a href="usuarios.html">
+        Cancelar</a>
+      <button type="submit">
+        Guardar
+      </button>
+    </div>
     <!--
       Maneja una asociación a uno.
     -->

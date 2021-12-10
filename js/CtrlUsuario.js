@@ -56,9 +56,10 @@ async function busca() {
     if (doc.exists) {
       const data = doc.data();
       forma.cue.value = id || "";
+      forma.matricula.value = data.matricula;
       img.src =
         await urlStorage(id);
-      forma.matricula.value = data.matricula;
+      
       selectAlumnos(
         forma.alumnoId,
         data.alummnoId)
@@ -84,13 +85,13 @@ try {
   evt.preventDefault();
   const formData =
     new FormData(forma);
-  const   matricula = getString(formData, "matricula").trim();  
+  const matricula = getString(formData, "matricula").trim();  
   /**
    * @type {
       import("./tipos.js").
               Alumno} */
   const modelo = {
-    matricula,
+    matricula
   };
   await daoUsuario.
     doc(id).

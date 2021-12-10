@@ -103,9 +103,6 @@ try {
 }
 }
 
-
-
-
 async function elimina() {
   try {
     if (confirm("Confirmar la " +

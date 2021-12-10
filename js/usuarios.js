@@ -5,7 +5,6 @@ import {
   subeStorage
 } from "../lib/storage.js";
 import {
-  getString,
   cod, getForánea, muestraError
 } from "../lib/util.js";
 import {
@@ -69,7 +68,7 @@ function
     `<option
         value="${cod(doc.id)}"
         ${selected}>
-      ${cod(data.nombre1)}
+      ${cod(data.nombre)}
     </option>`);
 }
 
@@ -148,28 +147,17 @@ export async function
     id) {
   try {
     evt.preventDefault();
-    const formData =
-      new FormData(forma);
-    const matricula = getString(
-        formData, "matricula").trim();  
-    const nombre = getString(formData, "nombre").trim();
-    const telefono = getString(formData, "telefono").trim();
-    const grupo = getString(formData, "grupo").trim();
-    const fecha = getString(formData, "fecha").trim();
-    /**
-     * @type {
-        import("./tipos.js").
-                Alumno} */
-    const modelo = {
-      matricula, 
-      nombre,
-      telefono,
-      grupo,
-      fecha
-    };
+    const alumnoId =
+      getForánea(formData,
+        "alumnoId");
+    const rolIds =
+      formData.getAll("rolIds");
     await daoUsuario.
       doc(id).
-      set(modelo);
+      set({
+        alumnoId,
+        rolIds
+      });
     const avatar =
       formData.get("avatar");
     await subeStorage(id, avatar);
@@ -178,3 +166,4 @@ export async function
     muestraError(e);
   }
 }
+

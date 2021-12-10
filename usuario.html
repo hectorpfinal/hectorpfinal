@@ -64,15 +64,22 @@
     </p>
     <p>
       <label>
-        Matricula
-        <input name="matricula"
-          type="text">
+        Nombre
+        <input name="nombre"
+          type="text" required>
       </label>
     </p>
     <p>
       <label>
-        Nombre
-        <input name="nombre"
+        Apellido
+        <input name="apellido"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        CURP
+        <input name="curp"
           type="text" required>
       </label>
     </p>
@@ -85,15 +92,23 @@
     </p>
     <p>
       <label>
-        Grupo
-        <input name="grupo"
-          type="text" required>
+        Fecha y Hora
+        <input name="fechayhora"
+          type="datetime-local" required>
       </label>
     </p>
     <p>
       <label>
-        Fecha
-        <input name="fecha" type="date" required>
+        Doctor 
+        <input name="doctor"
+          type="text" required list="doctores">
+      </label>
+    </p>
+    <p>
+      <label>
+        Motivo de la cita 
+        <input name="motivo"
+          type="text" required>
       </label>
     </p>
     <!--

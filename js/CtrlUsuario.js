@@ -7,7 +7,6 @@ import {
   urlStorage
 } from "../lib/storage.js";
 import {
-  getString,
   muestraError
 } from "../lib/util.js";
 import {
@@ -56,10 +55,8 @@ async function busca() {
     if (doc.exists) {
       const data = doc.data();
       forma.cue.value = id || "";
-      forma.matricula.value = data.matricula;
       img.src =
         await urlStorage(id);
-      
       selectAlumnos(
         forma.alumnoId,
         data.alummnoId)
@@ -81,26 +78,6 @@ async function busca() {
 async function guarda(evt) {
   await guardaUsuario(evt,
     new FormData(forma), id);
-try {
-  evt.preventDefault();
-  const formData =
-    new FormData(forma);
-  const matricula = getString(formData, "matricula").trim();  
-  /**
-   * @type {
-      import("./tipos.js").
-              Alumno} */
-  const modelo = {
-    matricula
-  };
-  await daoUsuario.
-    doc(id).
-    set(modelo);
-  muestraUsuarios();
-} catch (e) {
-  muestraError(e);
-}
-}
 }
 
 async function elimina() {

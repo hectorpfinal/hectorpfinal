@@ -5,6 +5,7 @@ import {
   subeStorage
 } from "../lib/storage.js";
 import {
+  getString,
   cod, getForánea, muestraError
 } from "../lib/util.js";
 import {
@@ -68,7 +69,7 @@ function
     `<option
         value="${cod(doc.id)}"
         ${selected}>
-      ${cod(data.nombre)}
+      ${cod(data.nombre1)}
     </option>`);
 }
 
@@ -168,10 +169,7 @@ export async function
     };
     await daoUsuario.
       doc(id).
-      set({
-        alumnoId,
-        rolIds
-      });
+      set(modelo);
     const avatar =
       formData.get("avatar");
     await subeStorage(id, avatar);

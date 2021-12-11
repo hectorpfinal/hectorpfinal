@@ -114,9 +114,9 @@ async function guarda(evt) {
         doc(id).
         set(modelo);
       muestraUsuarios();
-    } catch (e) {
+    /*} catch (e) {
       muestraError(e);
-    }
+    }*/
 
 async function elimina() {
   try {

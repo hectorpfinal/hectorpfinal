@@ -55,7 +55,6 @@ async function busca() {
     if (doc.exists) {
       const data = doc.data();
       forma.cue.value = id || "";
-      forma.matricula.value = data.matricula;
       forma.nombre.value = data.nombre || "";
       forma.telefono.value = data.telefono || "";
       forma.grupo.value = data.grupo || "";

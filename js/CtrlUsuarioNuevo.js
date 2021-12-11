@@ -47,13 +47,6 @@ async function protege(usuario) {
 async function guarda(evt) {
   const formData = new FormData(forma);
   const id = getString(formData, "cue").trim();
-  const nombre = getString(formData, "nombre").trim();  
-  const apellido = getString(formData, "apellido").trim();
-  const curp = getString(formData, "curp").trim();
-  const telefono = getString(formData, "telefono").trim();
-  const fechayhora = getString(formData, "fechayhora").trim();
-  const doctor = getString(formData, "doctor").trim();
-  const motivo = getString(formData, "motivo").trim();
   await guardaUsuario(evt, formData, id);
 
   }

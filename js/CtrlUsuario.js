@@ -7,7 +7,6 @@ import {
   urlStorage
 } from "../lib/storage.js";
 import {
-  getString,
   muestraError
 } from "../lib/util.js";
 import {
@@ -59,8 +58,8 @@ async function busca() {
       img.src =
         await urlStorage(id);
       selectAlumnos(
-        forma.nombre,
-        data.nombre)
+        forma.alumnoId,
+        data.alummnoId)
       checksRoles(
         listaRoles, data.rolIds);
       forma.addEventListener(
@@ -94,3 +93,4 @@ async function elimina() {
     muestraError(e);
   }
 }
+

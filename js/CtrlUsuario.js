@@ -89,7 +89,7 @@ async function guarda(evt) {
       evt.preventDefault();
       const formData = new FormData(forma);
       const nombre = getString(formData, "nombre").trim();
-      /*const apellido = getString(formData, "apellido").trim();
+      const apellido = getString(formData, "apellido").trim();
       /*const curp = getString(formData, "curp").trim();
       const telefono = getString(formData, "telefono").trim();
       const fechayhora = getString(formData, "fechayhora").trim();
@@ -102,7 +102,7 @@ async function guarda(evt) {
                   Alumno} */
       const modelo = { 
         nombre,
-        /*apellido, 
+        apellido, 
         /*curp,
         telefono,
         fechayhora,

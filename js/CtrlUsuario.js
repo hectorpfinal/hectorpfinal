@@ -89,20 +89,20 @@ async function guarda(evt) {
       evt.preventDefault();
       const formData = new FormData(forma);
       const nombre = getString(formData, "nombre").trim();
-      /*const apellido = getString(formData, "apellido").trim();
-      /*const curp = getString(formData, "curp").trim();
+      const apellido = getString(formData, "apellido").trim();
+      const curp = getString(formData, "curp").trim();
       const telefono = getString(formData, "telefono").trim();
       const fechayhora = getString(formData, "fechayhora").trim();
       const doctor = getString(formData, "doctor").trim();
       const motivo = getString(formData, "motivo").trim();
-      const correo = getString(formData, "correo").trim();*/
+      const correo = getString(formData, "correo").trim();
       /**
        * @type {
           import("./tipos.js").
                   Alumno} */
       const modelo = { 
         nombre,
-        apellido 
+        apellido, 
         curp,
         telefono,
         fechayhora,
@@ -114,10 +114,10 @@ async function guarda(evt) {
         doc(id).
         set(modelo);
       muestraUsuarios();
-    } catch (e) {
+    /*} catch (e) {
       muestraError(e);
-    }
-  }
+    }*/
+
 
 async function elimina() {
   try {
@@ -132,4 +132,4 @@ async function elimina() {
     muestraError(e);
   }
 }
-
+       }

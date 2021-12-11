@@ -45,6 +45,8 @@ async function protege(usuario) {
 
 /** @param {Event} evt */
 async function guarda(evt) {
+  try {
+    evt.preventDefault();
   const formData = new FormData(forma);
   const id = getString(formData, "nombre").trim();
   const nombre = getString(formData, "nombre").trim();
@@ -75,6 +77,5 @@ async function guarda(evt) {
               }
             }
   }
-  
   
 

@@ -56,15 +56,11 @@ async function busca() {
     if (doc.exists) {
       const data = doc.data();
       forma.cue.value = id || "";
-      forma.nombre.value = data.nombre || "";
-      forma.telefono.value = data.telefono || "";
-      forma.grupo.value = data.grupo || "";
-      forma.fecha.value = data.fecha || "";
       img.src =
         await urlStorage(id);
       selectAlumnos(
-        forma.alumnoId,
-        data.alummnoId)
+        forma.nombre,
+        data.nombre)
       checksRoles(
         listaRoles, data.rolIds);
       forma.addEventListener(

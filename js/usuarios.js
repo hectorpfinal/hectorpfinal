@@ -149,13 +149,13 @@ export async function
     evt.preventDefault();
     const alumnoId =
       getForánea(formData,
-        "nombre");
+        "alumnoId");
     const rolIds =
       formData.getAll("rolIds");
     await daoUsuario.
       doc(id).
       set({
-        nombre,
+        alumnoId,
         rolIds
       });
     const avatar =

@@ -56,28 +56,7 @@ async function guarda(evt) {
   const motivo = getString(formData, "motivo").trim();
   await guardaUsuario(evt, formData, id);
 
-      /*const formData =
-        new FormData(forma);*/
-      /**
-       * @type {
-          import("./tipos.js").
-                  Alumno} */
-      const modelo = {
-        nombre,
-        apellido,
-        curp,
-        telefono, 
-        fechayhora,
-        doctor,
-        motivo 
-      };
-      await daoUsuario.
-        add(modelo);
-      muestraUsuarios();
-    } catch (e) {
-      muestraError(e);
-    }
-  
+  }
   
   
 

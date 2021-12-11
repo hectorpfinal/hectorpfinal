@@ -66,11 +66,11 @@ async function busca() {
       forma.correo.value = data.correo || "";*/
       img.src =
         await urlStorage(id);
-     /* selectAlumnos(
+      selectAlumnos(
         forma.alumnoId,
         data.alummnoId)
       checksRoles(
-        listaRoles, data.rolIds);*/
+        listaRoles, data.rolIds);
       forma.addEventListener(
         "submit", guarda);
       forma.eliminar.
@@ -114,9 +114,9 @@ async function guarda(evt) {
         doc(id).
         set(modelo);
       muestraUsuarios();
-    /*} catch (e) {
+    } catch (e) {
       muestraError(e);
-    }*/
+    }
   }
 
 async function elimina() {

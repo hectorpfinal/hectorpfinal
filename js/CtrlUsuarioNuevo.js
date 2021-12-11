@@ -37,9 +37,9 @@ async function protege(usuario) {
     ["Administrador"])) {
     forma.addEventListener(
       "submit", guarda);
-    selectAlumnos(
+    /*selectAlumnos(
       forma.alumnoId, "");
-    checksRoles(listaRoles, []);
+    checksRoles(listaRoles, []);*/
   }
 }
 
@@ -48,7 +48,7 @@ async function guarda(evt) {
   try {
     evt.preventDefault();
   const formData = new FormData(forma);
-  const id = getString(formData, "nombre").trim();
+  const id = getString(formData, "cue").trim();
   const nombre = getString(formData, "nombre").trim();
   const apellido = getString(formData, "apellido").trim();
   const curp = getString(formData, "curp").trim();
@@ -57,7 +57,7 @@ async function guarda(evt) {
   const doctor = getString(formData, "doctor").trim();
   const motivo = getString(formData, "motivo").trim();
   const correo = getString(formData, "correo").trim();
-  /*await guardaUsuario(evt, formData, id);*/
+  await guardaUsuario(evt, formData, id);
 /**
      * @type {
         import("./tipos.js").

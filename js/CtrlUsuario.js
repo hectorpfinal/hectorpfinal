@@ -7,6 +7,7 @@ import {
   urlStorage
 } from "../lib/storage.js";
 import {
+  getString,
   muestraError
 } from "../lib/util.js";
 import {
@@ -54,14 +55,22 @@ async function busca() {
       get();
     if (doc.exists) {
       const data = doc.data();
-      forma.nombre.value = id || "";
+      forma.cue.value = id || "";
+      forma.nombre.value = data.nombre || "";
+      forma.apelllido.value = data.apellido || "";
+      forma.curp.value = data.curp || "";
+      forma.telefono.value = data.telefono || "";
+      forma.fechayhora.value = data.fechayhora || "";
+      forma.doctor.value = data.doctor || "";
+      forma.motivo.value = data.motivo || "";
+      forma.correo.value = data.correo || "";
       img.src =
         await urlStorage(id);
-      selectAlumnos(
+      /*selectAlumnos(
         forma.alumnoId,
         data.alummnoId)
       checksRoles(
-        listaRoles, data.rolIds);
+        listaRoles, data.rolIds);*/
       forma.addEventListener(
         "submit", guarda);
       forma.eliminar.
@@ -78,7 +87,41 @@ async function busca() {
 async function guarda(evt) {
   await guardaUsuario(evt,
     new FormData(forma), id);
-}
+    try {
+      evt.preventDefault();
+      const formData =
+        new FormData(forma);
+      const matricula = getString(
+          formData, "matricula").trim();  
+      const nombre = getString(formData, "nombre").trim();
+      const telefono = getString(formData, "telefono").trim();
+      const grupo = getString(formData, "grupo").trim();
+      const fecha = getString(formData, "fecha").trim();
+      /**
+       * @type {
+          import("./tipos.js").
+                  Alumno} */
+      const modelo = { 
+        nombre,
+        apellido, 
+        curp,
+        telefono,
+        fechayhora,
+        doctor, 
+        motivo,
+        correo
+      };
+      await daoUsuario.
+        doc(id).
+        set(modelo);
+      muestraUsuarios();
+    } catch (e) {
+      muestraError(e);
+    }
+  }
+
+
+
 
 async function elimina() {
   try {

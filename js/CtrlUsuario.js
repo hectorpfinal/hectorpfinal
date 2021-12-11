@@ -57,13 +57,13 @@ async function busca() {
       const data = doc.data();
       forma.cue.value = id || "";
       forma.nombre.value = data.nombre || "";
-      forma.apelllido.value = data.apellido || "";
+      /*forma.apelllido.value = data.apellido || "";
       forma.curp.value = data.curp || "";
       forma.telefono.value = data.telefono || "";
       forma.fechayhora.value = data.fechayhora || "";
       forma.doctor.value = data.doctor || "";
       forma.motivo.value = data.motivo || "";
-      forma.correo.value = data.correo || "";
+      forma.correo.value = data.correo || "";*/
       img.src =
         await urlStorage(id);
       selectAlumnos(
@@ -86,8 +86,7 @@ async function busca() {
 /** @param {Event} evt */
 async function guarda(evt) {
   await guardaUsuario(evt, new FormData(forma), id);
-    try {
-      evt.preventDefault();
+      /*evt.preventDefault();*/
       const formData = new FormData(forma);
       const nombre = getString(formData, "nombre").trim();
       const apellido = getString(formData, "apellido").trim();
@@ -118,10 +117,6 @@ async function guarda(evt) {
     } catch (e) {
       muestraError(e);
     }
-  }
-
-
-
 
 async function elimina() {
   try {

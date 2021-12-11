@@ -63,11 +63,14 @@ async function guarda(evt) {
         import("./tipos.js").
                 Alumno} */
                 const modelo = {
-                  matricula,
                   nombre,
+                  apellido,
+                  curp,
                   telefono,
-                  grupo,
-                  fecha 
+                  fechayhora,
+                  doctor,
+                  motivo,
+                  correo 
                 };
                 await daoUsuario.
                   add(modelo);
@@ -76,6 +79,6 @@ async function guarda(evt) {
                 muestraError(e);
               }
             }
-  }
+
   
 

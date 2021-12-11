@@ -102,7 +102,7 @@ async function guarda(evt) {
                   Alumno} */
       const modelo = { 
         nombre,
-        apellido, 
+        apellido 
         /*curp,
         telefono,
         fechayhora,

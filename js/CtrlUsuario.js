@@ -57,7 +57,7 @@ async function busca() {
       const data = doc.data();
       forma.cue.value = id || "";
       forma.nombre.value = data.nombre || "";
-      forma.apelllido.value = data.apellido || "";
+      /*forma.apelllido.value = data.apellido || "";
       /*forma.curp.value = data.curp || "";
       forma.telefono.value = data.telefono || "";
       forma.fechayhora.value = data.fechayhora || "";
@@ -66,11 +66,11 @@ async function busca() {
       forma.correo.value = data.correo || "";*/
       img.src =
         await urlStorage(id);
-      selectAlumnos(
+     /* selectAlumnos(
         forma.alumnoId,
         data.alummnoId)
       checksRoles(
-        listaRoles, data.rolIds);
+        listaRoles, data.rolIds);*/
       forma.addEventListener(
         "submit", guarda);
       forma.eliminar.
@@ -89,7 +89,7 @@ async function guarda(evt) {
       evt.preventDefault();
       const formData = new FormData(forma);
       const nombre = getString(formData, "nombre").trim();
-      const apellido = getString(formData, "apellido").trim();
+      /*const apellido = getString(formData, "apellido").trim();
       /*const curp = getString(formData, "curp").trim();
       const telefono = getString(formData, "telefono").trim();
       const fechayhora = getString(formData, "fechayhora").trim();

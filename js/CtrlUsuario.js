@@ -103,12 +103,12 @@ async function guarda(evt) {
       const modelo = { 
         nombre,
         apellido, 
-        curp,
+        /*curp,
         telefono,
         fechayhora,
         doctor, 
         motivo,
-        correo
+        correo*/
       };
       await daoUsuario.
         doc(id).

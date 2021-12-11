@@ -117,6 +117,7 @@ async function guarda(evt) {
     /*} catch (e) {
       muestraError(e);
     }*/
+  }
 
 async function elimina() {
   try {

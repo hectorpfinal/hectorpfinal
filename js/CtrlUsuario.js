@@ -33,8 +33,8 @@ const forma = document["forma"];
 const img = document.
   querySelector("img");
 /** @type {HTMLUListElement} */
-const listaRoles = document.
-  querySelector("#listaRoles");
+/*const listaRoles = document.
+  querySelector("#listaRoles");*/
 getAuth().onAuthStateChanged(
   protege, muestraError);
 
@@ -66,11 +66,11 @@ async function busca() {
       forma.correo.value = data.correo || "";*/
       img.src =
         await urlStorage(id);
-      selectAlumnos(
+     /* selectAlumnos(
         forma.alumnoId,
         data.alummnoId)
       checksRoles(
-        listaRoles, data.rolIds);
+        listaRoles, data.rolIds);*/
       forma.addEventListener(
         "submit", guarda);
       forma.eliminar.
@@ -86,7 +86,7 @@ async function busca() {
 /** @param {Event} evt */
 async function guarda(evt) {
   await guardaUsuario(evt, new FormData(forma), id);
-      /*evt.preventDefault();*/
+      evt.preventDefault();
       const formData = new FormData(forma);
       const nombre = getString(formData, "nombre").trim();
       const apellido = getString(formData, "apellido").trim();

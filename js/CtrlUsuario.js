@@ -61,7 +61,7 @@ async function busca() {
       const data = doc.data();
       forma.cue.value = id || "";
       forma.nombre.value = data.nombre || "";
-      forma.apelllido.value = data.apellido || "";
+      /*forma.apelllido.value = data.apellido || "";
       /*forma.curp.value = data.curp || "";
       forma.telefono.value = data.telefono || "";
       forma.fechayhora.value = data.fechayhora || "";
@@ -124,7 +124,7 @@ async function guarda(evt) {
   }
 
 async function elimina() {
-  /*try {*/
+  try {
     if (confirm("Confirmar la " +
       "eliminación")) {
       await daoUsuario.
@@ -132,8 +132,8 @@ async function elimina() {
       await eliminaStorage(id);
       muestraUsuarios();
     }
-  /* catch (e) {
+  } catch (e) {
     muestraError(e);
-  }*/
+  }
 }
-       
+       }

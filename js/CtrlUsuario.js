@@ -54,6 +54,10 @@ async function busca() {
       doc(id).
       get();
     if (doc.exists) {
+        /** 
+        * @type {
+            import("./tipos.js").
+                  Alumno} */
       const data = doc.data();
       forma.cue.value = id || "";
       forma.nombre.value = data.nombre || "";
@@ -64,28 +68,28 @@ async function busca() {
       forma.doctor.value = data.doctor || "";
       forma.motivo.value = data.motivo || "";
       forma.correo.value = data.correo || "";*/
-      img.src =
-        await urlStorage(id);
+      img.src = await urlStorage(id);
       /*selectAlumnos(
         forma.alumnoId,
         data.alummnoId)
       checksRoles(
         listaRoles, data.rolIds);*/
-      forma.addEventListener(
-        "submit", guarda);
-      forma.eliminar.
-        addEventListener(
-          "click", elimina);
-    }
+      forma.addEventListener("submit", guarda);
+      forma.eliminar.addEventListener("click", elimina);
+      }else {
+        throw new Error(
+          "No se encontró.");
+      }
   } catch (e) {
     muestraError(e);
     muestraUsuarios();
+    }
   }
-}
 
 /** @param {Event} evt */
 async function guarda(evt) {
   await guardaUsuario(evt, new FormData(forma), id);
+    try {
       evt.preventDefault();
       const formData = new FormData(forma);
       const nombre = getString(formData, "nombre").trim();
@@ -110,14 +114,14 @@ async function guarda(evt) {
         motivo,
         correo
       };
-      await daoUsuario.
+      /*await daoUsuario.
         doc(id).
-        set(modelo);
-      muestraUsuarios();
-    /*} catch (e) {
+        set(modelo)
+      muestraUsuarios();*/
+    } catch (e) {
       muestraError(e);
-    }*/
-
+    }
+  }
 
 async function elimina() {
   try {
@@ -132,4 +136,4 @@ async function elimina() {
     muestraError(e);
   }
 }
-       }
+       

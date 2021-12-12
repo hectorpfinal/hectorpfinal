@@ -124,7 +124,7 @@ async function guarda(evt) {
   }
 
 async function elimina() {
-  try {
+  /*try {*/
     if (confirm("Confirmar la " +
       "eliminación")) {
       await daoUsuario.
@@ -132,8 +132,8 @@ async function elimina() {
       await eliminaStorage(id);
       muestraUsuarios();
     }
-  } catch (e) {
+  /* catch (e) {
     muestraError(e);
-  }
+  }*/
 }
        

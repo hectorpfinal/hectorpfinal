@@ -61,7 +61,7 @@ async function busca() {
       const data = doc.data();
       forma.cue.value = id || "";
       forma.nombre.value = data.nombre || "";
-      /*forma.apelllido.value = data.apellido || "";
+      forma.apelllido.value = data.apellido || "";
       /*forma.curp.value = data.curp || "";
       forma.telefono.value = data.telefono || "";
       forma.fechayhora.value = data.fechayhora || "";

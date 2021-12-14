@@ -4,7 +4,7 @@ import {
 } from "../lib/fabrica.js";
 import {
   getString,
-  muestraError,
+  muestraError
 } from "../lib/util.js";
 import {
   muestraAlumnos
@@ -12,11 +12,6 @@ import {
 import {
   tieneRol
 } from "./seguridad.js";
-import {
-  subeStorage,
-  eliminaStorage,
-  urlStorage
-} from "../lib/storage.js";
 
 const daoAlumno =
   getFirestore().

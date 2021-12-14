@@ -47,15 +47,22 @@
     </header>
     <p>
       <label>
-        Matricula
-        <input name="matricula"
+        Nombre
+        <input name="nombre"
           type="text" required>
       </label>
     </p>
     <p>
       <label>
-        Nombre
-        <input name="nombre"
+        Apellido
+        <input name="apellido"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        CURP
+        <input name="curp"
           type="text" required>
       </label>
     </p>
@@ -68,19 +75,49 @@
     </p>
     <p>
       <label>
-        Grupo
-        <input name="grupo"
+        Fecha y Hora
+        <input name="fechayhora"
+          type="datetime-local" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Doctor 
+        <input name="doctor"
+          type="text" required list="doctores">
+      </label>
+    </p>
+    <p>
+      <label>
+        Motivo de la cita 
+        <input name="motivo"
           type="text" required>
       </label>
     </p>
     <p>
       <label>
-        Fecha
-        <input name="fecha" type="date" required>
+        Correo
+        <input name="correo"
+          type="email" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Foto del Paciente
+        <input name="avatar"
+          type="file" required
+          accept=".png,.jpg,.jpeg,.gif">
       </label>
     </p>
     <mi-footer></mi-footer>
   </form>
+  <datalist id="doctores">
+    <option value="Internet Explorer">
+    <option value="Safari">
+    <option value="Chrome">
+    <option value="Edge">
+    <option value="Firefox">
+  </datalist>
   <script type="module"
     src="js/CtrlAlumno.js">
     </script>

@@ -15,7 +15,9 @@ import {
   tieneRol
 } from "./seguridad.js";
 import {
-  subeStorage
+  subeStorage,
+  eliminaStorage,
+  urlStorage
 } from "../lib/storage.js";
 
 const daoAlumno =
@@ -27,6 +29,8 @@ const params =
 const id = params.get("id");
 /** @type {HTMLFormElement} */
 const forma = document["forma"];
+const img = document.
+  querySelector("img");
 
 getAuth().onAuthStateChanged(
   protege, muestraError);
@@ -122,6 +126,7 @@ async function elimina() {
       await daoAlumno.
         doc(id).
         delete();
+      await eliminaStorage(id);
       muestraAlumnos();
     }
   } catch (e) {
@@ -143,7 +148,7 @@ async function elimina() {
        "alumnoId");
    const rolIds =
      formData.getAll("rolIds");
-   await daoUsuario.
+   await daoAlumno.
      doc(id).
      set({
        alumnoId,
@@ -152,7 +157,7 @@ async function elimina() {
    const avatar =
      formData.get("avatar");
    await subeStorage(id, avatar);
-   muestraUsuarios();
+   muestraAlumnos();
  } catch (e) {
    muestraError(e);
  }

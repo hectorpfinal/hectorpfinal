@@ -4,7 +4,9 @@ import {
 } from "../lib/fabrica.js";
 import {
   getString,
-  muestraError
+  muestraError,
+  cod, 
+  getForánea,
 } from "../lib/util.js";
 import {
   muestraAlumnos
@@ -12,6 +14,9 @@ import {
 import {
   tieneRol
 } from "./seguridad.js";
+import {
+  subeStorage
+} from "../lib/storage.js";
 
 const daoAlumno =
   getFirestore().
@@ -124,3 +129,31 @@ async function elimina() {
   }
 }
 
+/**
+ * @param {Event} evt
+ * @param {FormData} formData
+ * @param {string} id  */
+ export async function
+ guardaUsuario(evt, formData,
+   id) {
+ try {
+   evt.preventDefault();
+   const alumnoId =
+     getForánea(formData,
+       "alumnoId");
+   const rolIds =
+     formData.getAll("rolIds");
+   await daoUsuario.
+     doc(id).
+     set({
+       alumnoId,
+       rolIds
+     });
+   const avatar =
+     formData.get("avatar");
+   await subeStorage(id, avatar);
+   muestraUsuarios();
+ } catch (e) {
+   muestraError(e);
+ }
+}

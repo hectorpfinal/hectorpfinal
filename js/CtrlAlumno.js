@@ -5,8 +5,6 @@ import {
 import {
   getString,
   muestraError,
-  cod, 
-  getForánea,
 } from "../lib/util.js";
 import {
   muestraAlumnos

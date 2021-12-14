@@ -38,7 +38,7 @@ async function guarda(evt) {
     evt.preventDefault();
     const formData =
       new FormData(forma);
-      const nombre = getString(formData, "nombre").trim();
+    const nombre = getString(formData, "nombre").trim();
       const apellido = getString(formData, "apellido").trim();
       const curp = getString(formData, "curp").trim();
       const telefono = getString(formData, "telefono").trim();
@@ -46,7 +46,6 @@ async function guarda(evt) {
       const doctor = getString(formData, "doctor").trim();
       const motivo = getString(formData, "motivo").trim();
       const correo = getString(formData, "correo").trim();
-      img.src = await urlStorage(id);
     /**
      * @type {
         import("./tipos.js").
@@ -59,7 +58,7 @@ async function guarda(evt) {
       fechayhora,
       doctor, 
       motivo,
-      correo
+      correo 
     };
     await daoAlumno.
       add(modelo);

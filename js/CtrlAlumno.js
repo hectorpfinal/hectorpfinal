@@ -51,7 +51,7 @@ async function busca() {
                   Alumno} */
       const data = doc.data();
       forma.nombre.value = data.nombre || "";
-      forma.apelllido.value = data.apellido || "";
+      forma.apellido.value = data.apellido || "";
       forma.curp.value = data.curp || "";
       forma.telefono.value = data.telefono || "";
       forma.fechayhora.value = data.fechayhora || "";

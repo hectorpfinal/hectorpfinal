@@ -68,9 +68,9 @@ function htmlFila(doc) {
    * @type {import("./tipos.js").
                   Alumno} */
   const data = doc.data();
-  const matricula = cod(data.matricula);
   const nombre = cod(data.nombre);
-  var fsf= cod(data.fecha);
+  const apellido = cod(data.apellido);
+  var fsf= cod(data.fechayhora);
   var fecha = new Date(fsf);
   var espacio="[   -   ]";
   var dformat = [fecha.getDate()+1, fecha.getMonth()+1, fecha.getFullYear()].join('/');
@@ -82,7 +82,7 @@ function htmlFila(doc) {
       <a class="fila" href=
   "alumno.html?${parámetros}">
         <strong class="primario">
-          ${matricula} ${nombre} ${dformat}
+          ${nombre} ${apellido} ${dformat}
         </strong>
       </a>
      

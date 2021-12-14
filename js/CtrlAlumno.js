@@ -123,3 +123,33 @@ async function elimina() {
     muestraError(e);
   }
 }
+
+/**
+ * @param {Event} evt
+ * @param {FormData} formData
+ * @param {string} id  */
+ export async function
+ guardaUsuario(evt, formData,
+   id) {
+ try {
+   evt.preventDefault();
+   const alumnoId =
+     getForánea(formData,
+       "alumnoId");
+   const rolIds =
+     formData.getAll("rolIds");
+   await daoAlumno.
+     doc(id).
+     set({
+       alumnoId,
+       rolIds
+     });
+   const avatar =
+     formData.get("avatar");
+   await subeStorage(id, avatar);
+   muestraAlumnos();
+ } catch (e) {
+   muestraError(e);
+ }
+}
+

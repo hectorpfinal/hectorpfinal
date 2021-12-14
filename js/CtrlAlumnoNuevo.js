@@ -46,6 +46,7 @@ async function guarda(evt) {
       const doctor = getString(formData, "doctor").trim();
       const motivo = getString(formData, "motivo").trim();
       const correo = getString(formData, "correo").trim();
+      await guardaAlumno(evt,formData, id);
     /**
      * @type {
         import("./tipos.js").

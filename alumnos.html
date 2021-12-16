@@ -29,7 +29,7 @@
   <link rel="stylesheet"
     href="css/estilos.css">
 </head>
-<body>
+<!-- <body>
   <mi-nav></mi-nav>
   <header>
     <h1>Alumnos</h1>
@@ -50,5 +50,49 @@
     src="js/CtrlAlumnos.js">
     </script>
 </body>
-</html>
+</html> -->
+
+<body>
+  <mi-nav></mi-nav>
+  <form name="forma">
+  <section class="seccion-perfil-usuario">
+    <div class="perfil-usuario-header">
+        <div class="perfil-usuario-portada">
+            <div class="perfil-usuario-avatar">
+              <figure>
+                <img id="avatar" src="" alt="Avatar">
+              </figure>
+                <button type="button" class="boton-avatar">
+                    <i class="far fa-image"></i>
+                </button>
+            </div>
+            <button type="button" class="boton-portada" name="terminarSesión">
+              <i></i> Cerrar Sesión
+          </button>
+        </div>
+    </div>
+    <div class="perfil-usuario-body">
+        <div class="perfil-usuario-bio">
+          <label>
+            <output name="nombre"></output>
+            <p class="texto">Bienvenid@, Aquí podrá mayor información acerca de sus próximas citas en el hospital que está dado del alta.</p>
+          <label>    
+           
+        </div>
+        <h3> Tu próxima cita es:</h3>
+        <div class="perfil-usuario-footer">
+            <ul class="lista-datos">
+                <li><i class="icono fas fa-map-signs"></i> Hora y Fecha:</li>
+                <li><i class="icono fas fa-building"></i> Doctor: </li>
+            </ul>
+        </div>
+    </div>
+    <mi-footer></mi-footer>
+  </form>
+  </section>
+  <script type="module"
+  src="js/CtrlSesion.js">
+  </script>
+  </body>
+  </html>
  

@@ -76,17 +76,6 @@ p label>* {
   box-sizing: border-box;
   width: 100%;
 }
-/*
-.caja {
-  color: black;
-  background-color:rgb(241, 241, 241);
-  width: 100%;
-  padding-left: 2em;
-  padding-right: 0em;
-  padding-top: 1em;
-  padding-bottom: 3em;
-  position: none;
-}*/
 
 .seccion-perfil-usuario .perfil-usuario-body,
 .seccion-perfil-usuario {
@@ -225,3 +214,7 @@ p label>* {
         width: 95%;
     }
   }
+
+
+
+  

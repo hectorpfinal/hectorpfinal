@@ -37,15 +37,6 @@ class MiNav extends HTMLElement {
             await cargaRoles(
               usu.email);
           /* Enlaces para solo
-           * para clientes. */
-          if (roles.has("Cliente")) {
-            html += /* html */
-              `<li>
-                <a href=
-                  "chat.html">Chat</a>
-              </li>`;
-          }
-          /* Enlaces para solo
            * administradores.
            */
           if (roles.has(

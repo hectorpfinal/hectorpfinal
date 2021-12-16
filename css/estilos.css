@@ -217,7 +217,7 @@ p label>* {
 /*
 /*
 /*---------------Alumnos-------------------*/
-.seccion-perfil-usuario .perfil-alumno-portada {
+.seccion-perfil-usuario .perfil-alumnos-portada {
   display: block;
   position: relative;
   width: 90%;
@@ -225,7 +225,7 @@ p label>* {
   background: linear-gradient(45deg, #fd2655, #263abf);
   border-radius: 0 0 20px 20px;
 }
-.seccion-perfil-usuario .perfil-alumno-portada .boton-portada {
+.seccion-perfil-usuario .perfil-alumnos-portada .boton-portada {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -236,13 +236,13 @@ p label>* {
   color: #fff;
   cursor: pointer;
 }
-.seccion-perfil-usuario .perfil-alumno.titulo {
+/*.seccion-perfil-usuario .perfil-alumno.titulo {
   display: block;
   width: 100%;
   font-size: 1.75em;
   margin-bottom: 0.5rem;
   text-align: center;
-}
+}*/
 
   .seccion-perfil-usuario .perfil-alumnos {
     display: flex;
@@ -254,6 +254,7 @@ p label>* {
     width: 70%;
     position: relative;
     bottom: 4rem;
+    text-align: center;
 }
 
 .seccion-perfil-usuario .perfil-alumnos-info{

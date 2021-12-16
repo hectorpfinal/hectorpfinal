@@ -35,13 +35,13 @@ body {
   font-family: "Arial", Segoe UI, Tahoma, sans-serifl, Helvetica Neue, Helvetica;
 }
 
-header {
+/*header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color:
     var(--color-header);
-}
+}*/
 
 .herramientas {
   display: flex;
@@ -112,6 +112,7 @@ p label>* {
     background-color: rgba(0, 0, 0, .5);
     color: #fff;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .seccion-perfil-usuario .perfil-usuario-portada .boton-portada i {

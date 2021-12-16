@@ -54,7 +54,7 @@ header {
   gap: 0.5rem;
 }
 
-header input {
+/*header input {
   flex-grow: 1;
 }
 
@@ -75,7 +75,7 @@ p label>* {
   font-size: 1rem;
   box-sizing: border-box;
   width: 100%;
-}
+}*/
 
 .seccion-perfil-usuario .perfil-usuario-body,
 .seccion-perfil-usuario {
@@ -108,7 +108,7 @@ p label>* {
     right: 1rem;
     border: 0;
     border-radius: 8px;
-    padding: 12px 12px 12px 0px;
+    padding: 12px 15px 12px 0px;
     background-color: rgba(0, 0, 0, .5);
     color: #fff;
     cursor: pointer;
@@ -214,7 +214,48 @@ p label>* {
         width: 95%;
     }
   }
+/*
+/*
+/*---------------Alumnos-------------------*/
+.seccion-perfil-usuario .perfil-alumno-portada {
+  display: block;
+  position: relative;
+  width: 90%;
+  height: 8rem;
+  background: linear-gradient(45deg, #fd2655, #263abf);
+  border-radius: 0 0 20px 20px;
+}
+.seccion-perfil-usuario .perfil-alumno-portada .boton-portada {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px 12px 12px 12px;
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+  cursor: pointer;
+}
 
+  .seccion-perfil-usuario .perfil-alumnos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem 2rem 1rem 3rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    background-color: #fff;
+    border-radius: 15px;
+    width: 70%;
+    position: relative;
+    bottom: 4rem;
+}
 
-
-  
+.seccion-perfil-usuario .perfil-alumnos-info{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2.5rem 3rem 13rem 3rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+  background-color: #fff;
+  border-radius: 15px;
+  width: 100%;
+  position: relative; 
+}

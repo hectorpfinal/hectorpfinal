@@ -57,41 +57,30 @@
   <form name="forma">
   <section class="seccion-perfil-usuario">
     <div class="perfil-usuario-header">
-        <div class="perfil-usuario-portada">
-            <div class="perfil-usuario-avatar">
-              <figure>
-                <img id="avatar" src="" alt="Avatar">
-              </figure>
-                <button type="button" class="boton-avatar">
-                    <i class="far fa-image"></i>
-                </button>
-            </div>
-            <button type="button" class="boton-portada" name="terminarSesión">
-              <i></i> Cerrar Sesión
+        <div class="perfil-alumno-portada">
+            <button type="button" class="boton-portada">
+              <a href="alumnoNuevo.html"></a> Agregar Usuario
           </button>
         </div>
     </div>
     <div class="perfil-usuario-body">
-        <div class="perfil-usuario-bio">
+        <div class="perfil-alumnos">
           <label>
             <output name="nombre"></output>
-            <p class="texto">Bienvenid@, Aquí podrá mayor información acerca de sus próximas citas en el hospital que está dado del alta.</p>
+            <p class="titulo">Pacientes Registrados</p>
           <label>    
            
         </div>
-        <h3> Tu próxima cita es:</h3>
-        <div class="perfil-usuario-footer">
-            <ul class="lista-datos">
-                <li><i class="icono fas fa-map-signs"></i> Hora y Fecha:</li>
-                <li><i class="icono fas fa-building"></i> Doctor: </li>
-            </ul>
+        <div class="perfil-alumnos-info">
+          <ul id="lista" class="lista"></ul>
         </div>
     </div>
     <mi-footer></mi-footer>
   </form>
   </section>
   <script type="module"
-  src="js/CtrlSesion.js">
+    src="js/CtrlAlumnos.js">
+    </script>
   </script>
   </body>
   </html>

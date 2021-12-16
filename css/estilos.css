@@ -13,7 +13,7 @@ body {
   max-width: 640px;
   margin: 0 auto;
   padding: 0.5rem;
-}
+}*/
 
 header {
   position: -webkit-sticky;
@@ -60,7 +60,7 @@ p label>* {
   box-sizing: border-box;
   width: 100%;
 }
-
+/*
 .caja {
   color: black;
   background-color:rgb(241, 241, 241);
@@ -84,7 +84,7 @@ p label>* {
     width: 100%;
     display: flex;
     justify-content: center;
-    background: linear-gradient(#B873FF, transparent);
+    background: linear-gradient(#73d0ff, transparent);
     margin-bottom: 1.25rem;
 }
 
@@ -93,7 +93,7 @@ p label>* {
     position: relative;
     width: 90%;
     height: 17rem;
-    background: linear-gradient(45deg, #BC3CFF, #317FFF);
+    background: linear-gradient(45deg, #fd2655, #263abf);
     border-radius: 0 0 20px 20px;
 }
 
@@ -103,7 +103,7 @@ p label>* {
     right: 1rem;
     border: 0;
     border-radius: 8px;
-    padding: 12px 25px;
+    padding: 12px 12px 12px 0px;
     background-color: rgba(0, 0, 0, .5);
     color: #fff;
     cursor: pointer;
@@ -197,46 +197,8 @@ p label>* {
     vertical-align: middle;
 }
 
-.seccion-perfil-usuario .redes-sociales {
-    position: absolute;
-    right: calc(0px - 50px - 1rem);
-    top: 0;
-    display: flex;
-    flex-direction: column;
-}
 
-.seccion-perfil-usuario .redes-sociales .boton-redes {
-    border: 0;
-    background-color: #fff;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: #fff;
-    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
-    font-size: 1.3rem;
-}
-
-.seccion-perfil-usuario .redes-sociales .boton-redes+.boton-redes {
-    margin-top: .5rem;
-}
-
-.seccion-perfil-usuario .boton-redes.facebook {
-    background-color: #5955FF;
-}
-
-.seccion-perfil-usuario .boton-redes.twitter {
-    background-color: #35E1BF;
-}
-
-.seccion-perfil-usuario .boton-redes.instagram {
-    background: linear-gradient(45deg, #FF2DFD, #40A7FF);
-}
-
-/* adactacion a dispositivos */
+/* adaptacion a dispositivos */
 @media (max-width: 750px) {
     .seccion-perfil-usuario .lista-datos {
         width: 100%;
@@ -246,21 +208,4 @@ p label>* {
     .seccion-perfil-usuario .perfil-usuario-body {
         width: 95%;
     }
-
-    .seccion-perfil-usuario .redes-sociales {
-        position: relative;
-        flex-direction: row;
-        width: 100%;
-        left: 0;
-        text-align: center;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        align-items: center;
-        justify-content: center
-    }
-
-    .seccion-perfil-usuario .redes-sociales .boton-redes+.boton-redes {
-        margin-left: 1rem;
-        margin-top: 0;
-    }
-}
+  }

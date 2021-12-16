@@ -236,13 +236,13 @@ p label>* {
   color: #fff;
   cursor: pointer;
 }
-/*.seccion-perfil-usuario .perfil-alumno.titulo {
+.seccion-perfil-usuario .perfil-alumno.titulo {
   display: block;
   width: 100%;
   font-size: 1.75em;
   margin-bottom: 0.5rem;
   text-align: center;
-}*/
+}
 
   .seccion-perfil-usuario .perfil-alumnos {
     display: flex;

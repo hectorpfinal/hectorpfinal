@@ -1,26 +1,13 @@
 @import "mi-nav.css";
 @import "mi-footer.css";
 @import "listas.css";
-/**
-:root {
-  font-family: sans-serif;
-  --col-active: #4646462c;
-  --color-header: white;
-  --colorMiNav: white;
-}
 
-body {
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 0.5rem;
-}*/
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
   line-height: 1.4;
 }
-
 
 * {
   margin: 0;
@@ -34,48 +21,6 @@ body {
   color: #404040;
   font-family: "Arial", Segoe UI, Tahoma, sans-serifl, Helvetica Neue, Helvetica;
 }
-
-/*header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color:
-    var(--color-header);
-}*/
-
-/*.herramientas {
-  display: flex;
-  flex-flow: wrap;
-  align-items: center;
-  align-content: flex-end;
-  justify-content: flex-end;
-  margin-top: 0.10rem;
-  padding-bottom: 0.5rem;
-  gap: 0.5rem;
-}*/
-
-/*header input {
-  flex-grow: 1;
-}
-
-h1 {
-  margin: 0.5rem 0;
-}
-
-legend,
-p label {
-  display: block;
-  font-weight: bold;
-  font-size: 0.7rem;
-}
-
-p label>* {
-  display: block;
-  font-weight: normal;
-  font-size: 1rem;
-  box-sizing: border-box;
-  width: 100%;
-}*/
 
 .seccion-perfil-usuario .perfil-usuario-body,
 .seccion-perfil-usuario {
@@ -177,7 +122,7 @@ p label>* {
 .seccion-perfil-usuario .perfil-usuario-bio {
     display: flex;
     flex-wrap: wrap;
-    padding: 1.5rem 2rem;
+    padding: 3.5rem 2rem;
     box-shadow: 0 0 12px rgba(0, 0, 0, .2);
     background-color: #fff;
     border-radius: 15px;
@@ -185,7 +130,8 @@ p label>* {
 }
 
 .seccion-perfil-usuario .perfil-usuario-bio {
-    margin-bottom: 1.25rem;
+    margin-bottom: 2.25rem;
+    padding: 3rem;
     text-align: center;
 }
 
@@ -282,13 +228,6 @@ p label>* {
   bottom: 4rem;
   justify-content: center;
 }
-/*.seccion-perfil-usuario .perfil-alumnos {
-  display: block;
-  width: 100%;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}*/
 
 .seccion-perfil-usuario .perfil-registro-alumnos-info{
   display: flex;

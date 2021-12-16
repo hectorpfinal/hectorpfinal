@@ -54,6 +54,10 @@ body {
   gap: 0.5rem;
 }
 
+.a{
+  text-decoration: none;
+}
+
 /*header input {
   flex-grow: 1;
 }
@@ -117,6 +121,7 @@ p label>* {
 
 .seccion-perfil-usuario .perfil-usuario-portada .boton-portada i {
     margin-right: 1rem;
+    text-decoration: none;
 }
 
 .seccion-perfil-usuario .perfil-usuario-avatar {

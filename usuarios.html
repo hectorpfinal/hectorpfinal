@@ -34,7 +34,7 @@
     href="css/estilos.css">
 </head>
 <body>
-  <mi-nav></mi-nav>
+<!-- <mi-nav></mi-nav>
   <header>
     <h1>Usuarios</h1>
     <div class="herramientas">
@@ -51,6 +51,38 @@
   <mi-footer></mi-footer>
   <script type="module"
     src="js/CtrlUsuarios.js">
-    </script>
+    </script> -->
+<body>
+      <mi-nav></mi-nav>
+      <form name="forma">
+      <section class="seccion-perfil-usuario">
+        <div class="perfil-usuario-header">
+            <div class="perfil-alumnos-portada">
+                <button type="button" class="boton-portada"
+                   formaction="alumnoNuevo.html"> Agregar Nuevo
+                </button>
+            </div>
+        </div>
+        <div class="perfil-usuario-body">
+            <div class="perfil-alumnos">
+              <label>
+                <output name="nombre"></output>
+                <h3 class="centro-titulo">Pacientes Registrados</h3>
+              <label>    
+               
+            </div>
+            <div class="perfil-alumnos-info">
+              <ul id="lista" class="lista"></ul>
+            </div>
+        </div>
+        <mi-footer></mi-footer>
+      </form>
+      </section>
+      <script type="module"
+      src="js/CtrlUsuarios.js">
+        </script>
+      </script>
+      </body>
+      </html>    
 </body>
 </html>

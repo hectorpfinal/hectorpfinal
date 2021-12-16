@@ -1,7 +1,7 @@
 @import "mi-nav.css";
 @import "mi-footer.css";
 @import "listas.css";
-
+/**
 :root {
   font-family: sans-serif;
   --col-active: #4646462c;
@@ -70,7 +70,7 @@ p label>* {
   padding-top: 1em;
   padding-bottom: 3em;
   position: none;
-}
+}*/
 
 .seccion-perfil-usuario .perfil-usuario-body,
 .seccion-perfil-usuario {

@@ -127,8 +127,8 @@ async function elimina() {
 /**
  * @param {Event} evt
  * @param {FormData} formData
- * @param {string} id  */
- export async function
+
+/*export async function
  guardaUsuario(evt, formData,
    id) {
  try {
@@ -151,5 +151,5 @@ async function elimina() {
  } catch (e) {
    muestraError(e);
  }
-}
+}*/
 

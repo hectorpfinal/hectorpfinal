@@ -333,7 +333,7 @@ input:focus~.barra::before{
 }
 
 /*-----------------Editar ALumno-------------*/
-.seccion-perfil-usuario .perfil-alumnos-editar .boton-portada-eliminar{
+.seccion-perfil-usuario .perfil-alumnos-portada .boton-portada-eliminar{
   position: absolute;
   top: 1rem;
   right: 6rem;

@@ -90,8 +90,6 @@ async function guarda(evt) {
       const doctor = getString(formData, "doctor").trim();
       const motivo = getString(formData, "motivo").trim();
       const correo = getString(formData, "correo").trim();
-      const avatar = formData.get("avatar"); await subeStorage(id, avatar);
-  }
     /**
      * @type {
         import("./tipos.js").
@@ -109,11 +107,13 @@ async function guarda(evt) {
     await daoAlumno.
       doc(id).
       set(modelo);
+    /*var avatar = formData.get("avatar"); await subeStorage(id, avatar);*/
     muestraAlumnos();
   } catch (e) {
     muestraError(e);
   }
 }
+
 
 async function elimina() {
   try {

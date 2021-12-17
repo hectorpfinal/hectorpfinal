@@ -12,9 +12,6 @@ import {
 import {
   tieneRol
 } from "./seguridad.js";
-import {
-  subeStorage
-} from "../lib/storage.js";
 
 const daoAlumno =
   getFirestore().
@@ -49,7 +46,6 @@ async function guarda(evt) {
       const doctor = getString(formData, "doctor").trim();
       const motivo = getString(formData, "motivo").trim();
       const correo = getString(formData, "correo").trim();
-      const avatar = formData.get("avatar"); await subeStorage(correo, avatar);
     /**
      * @type {
         import("./tipos.js").

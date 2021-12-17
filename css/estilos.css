@@ -47,7 +47,7 @@ body {
     border-radius: 0 0 20px 20px;
 }
 
-/*.seccion-perfil-usuario .perfil-usuario-portada .boton-portada {
+.seccion-perfil-usuario .perfil-usuario-portada .boton-portada {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -58,7 +58,7 @@ body {
     color: #fff;
     cursor: pointer;
 
-}*/
+}
 
 .seccion-perfil-usuario .perfil-usuario-portada .boton-portada i {
     margin-right: 1rem;

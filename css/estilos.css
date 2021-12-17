@@ -348,18 +348,6 @@ input:focus~.barra::before{
   left: calc(50% - 90px);
   z-index: 1;
 }
-.seccion-perfil-usuario .perfil-ind-avatar .boton-avatar {
-  position: absolute;
-  left: -2px;
-  top: -2px;
-  border: 0;
-  background-color: #fff;
-  box-shadow: 0 0 12px rgba(0, 0, 0, .2);
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  cursor: pointer;
-}
 
 .seccion-perfil-usuario .perfil-alumnos-portada .boton-portada-eliminar{
   position: absolute;

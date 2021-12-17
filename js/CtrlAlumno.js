@@ -107,7 +107,6 @@ async function guarda(evt) {
     await daoAlumno.
       doc(id).
       set(modelo);
-    /*var avatar = formData.get("avatar"); await subeStorage(id, avatar);*/
     muestraAlumnos();
   } catch (e) {
     muestraError(e);

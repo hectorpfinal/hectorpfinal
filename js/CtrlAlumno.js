@@ -12,6 +12,9 @@ import {
 import {
   tieneRol
 } from "./seguridad.js";
+import {
+  subeStorage
+} from "../lib/storage.js";
 
 const daoAlumno =
   getFirestore().
@@ -87,6 +90,8 @@ async function guarda(evt) {
       const doctor = getString(formData, "doctor").trim();
       const motivo = getString(formData, "motivo").trim();
       const correo = getString(formData, "correo").trim();
+      const avatar = formData.get("avatar"); await subeStorage(id, avatar);
+
     /**
      * @type {
         import("./tipos.js").
@@ -127,29 +132,4 @@ async function elimina() {
 /**
  * @param {Event} evt
  * @param {FormData} formData
-
-/*export async function
- guardaUsuario(evt, formData,
-   id) {
- try {
-   evt.preventDefault();
-   const alumnoId =
-     getForánea(formData,
-       "alumnoId");
-   const rolIds =
-     formData.getAll("rolIds");
-   await daoAlumno.
-     doc(id).
-     set({
-       alumnoId,
-       rolIds
-     });
-   const avatar =
-     formData.get("avatar");
-   await subeStorage(id, avatar);
-   muestraAlumnos();
- } catch (e) {
-   muestraError(e);
- }
-}*/
 

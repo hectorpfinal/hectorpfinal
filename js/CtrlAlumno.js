@@ -91,7 +91,7 @@ async function guarda(evt) {
       const motivo = getString(formData, "motivo").trim();
       const correo = getString(formData, "correo").trim();
       const avatar = formData.get("avatar"); await subeStorage(id, avatar);
-
+  }
     /**
      * @type {
         import("./tipos.js").

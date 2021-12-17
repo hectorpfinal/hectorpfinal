@@ -332,3 +332,15 @@ input:focus~.barra::before{
   }
 }
 
+/*-----------------Editar ALumno-------------*/
+.seccion-perfil-usuario .perfil-alumnos-editar .boton-portada {
+  position: absolute;
+  top: 1rem;
+  right: 6rem;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px 12px 12px 12px;
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+  cursor: pointer;
+}

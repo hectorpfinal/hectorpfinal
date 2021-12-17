@@ -148,6 +148,80 @@
   <script type="module"
     src="js/CtrlUsuario.js">
     </script> -->
-
+    <body>
+      <mi-nav></mi-nav>
+      <form name="forma">
+      <section class="seccion-perfil-usuario">
+        <div class="perfil-usuario-header">
+            <div class="perfil-alumnos-portada">
+                <button type="button" class="boton-portada">
+                   <a href="alumnos.html">Cancelar</a> 
+                </button>  
+                <button type="button" class="boton-portada-eliminar" name="eliminar">  
+                  Eliminar
+             </button>          
+            </div>
+        </div>
+        <div class="perfil-usuario-body">
+            <div class="perfil-registro-alumnos">
+                <h3>Paciente</h3>    
+            </div>
+            <div class="perfil-registro-alumnos-info">
+                <form action="" method="POST" id="form" name="forma">
+                  <div class="form">
+                      <h1>Puede editar o agregar información</h1>
+                      <div class="grupo">
+                          <input name="nombre" type="text" required><span class="barra"></span>
+                          <label for="">Nombre</label>
+                      </div>
+                      <div class="grupo">
+                          <input name="apellido" type="text" required><span class="barra"></span>
+                          <label for="">Apellido</label>
+                      </div>
+                      <div class="grupo">
+                        <input name="curp"type="text"required><span class="barra"></span>
+                        <label for="">CURP</label>
+                      </div>
+                      <div class="grupo">
+                        <input name="telefono"type="text" required><span class="barra"></span>
+                        <label for="">Telefono</label>
+                      </div>
+                      <div class="grupo">
+                        <input name="fechayhora" type="datetime-local" equired><span class="barra"></span>
+                        <label for="">Fecha y Hora</label>
+                      </div>
+                      <div class="grupo">
+                        <input name="doctor"type="text" list="doctores" required><span class="barra"></span>
+                      <label for="">Doctor</label>
+                      </div>
+                      <div class="grupo">
+                        <input name="motivo" type="text" required><span class="barra"></span>
+                        <label for="">Motivo de Cita</label>
+                      </div>
+                      <div class="grupo">
+                        <input name="correo" type="email" required><span class="barra"></span>
+                        <label for="">Correo Electrónico</label>
+                      </div>
+                      <div class="grupo">
+                        <input name="avatar" type="file" accept=".png,.jpg,.jpeg,.gif" required><span class="barra"></span>
+                        <label for=""></label>
+                      </div>
+                      <button class="guardar" type="submit">Guardar</button>
+                  </div>
+              </form>    
+            </div>
+          </div>
+    <mi-footer></mi-footer>
+  </form>
+  <datalist id="doctores">
+    <option value="Internet Explorer">
+    <option value="Safari">
+    <option value="Chrome">
+    <option value="Edge">
+    <option value="Firefox">
+  </datalist>
+ <script type="module"
+    src="js/CtrlUsuario.js">
+    </script>
 </body>
 </html>

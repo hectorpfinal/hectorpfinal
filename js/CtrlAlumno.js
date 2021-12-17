@@ -114,7 +114,6 @@ async function guarda(evt) {
   }
 }
 
-
 async function elimina() {
   try {
     if (confirm("Confirmar la " +
@@ -128,8 +127,3 @@ async function elimina() {
     muestraError(e);
   }
 }
-
-/**
- * @param {Event} evt
- * @param {FormData} formData
-*/

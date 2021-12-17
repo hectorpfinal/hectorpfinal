@@ -333,15 +333,6 @@ input:focus~.barra::before{
 }
 
 /*-----------------Editar ALumno-------------*/
-.seccion-perfil-usuario .perfil-alumnos-portada {
-  display: block;
-  position: relative;
-  width: 90%;
-  height: 8rem;
-  background: linear-gradient(45deg, #fd2655, #263abf);
-  border-radius: 0 0 20px 20px;
-}
-
 .seccion-perfil-usuario .perfil-ind-avatar {
   display: flex;
   width: 180px;
@@ -368,27 +359,4 @@ input:focus~.barra::before{
   background-color: rgba(0, 0, 0, .5);
   color: #fff;
   cursor: pointer;
-}
-
-.seccion-perfil-usuario .perfil-ind-alumnos {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2rem 2rem 2rem 2rem;
-  box-shadow: 0 0 12px rgba(0, 0, 0, .2);
-  background-color: #fff;
-  border-radius: 15px;
-  width: 70%;
-  position: relative;
-  bottom: 1rem;
-  justify-content: center;
-}
-.seccion-perfil-usuario .perfil-ind-alumnos-info{
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2.5rem 3rem 3rem 3rem;
-  box-shadow: 0 0 12px rgba(0, 0, 0, .2);
-  background-color: #fff;
-  border-radius: 15px;
-  width: 100%;
-  position: relative; 
 }

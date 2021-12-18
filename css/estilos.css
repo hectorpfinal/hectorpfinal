@@ -345,3 +345,31 @@ input:focus~.barra::before{
   color: #fff;
   cursor: pointer;
 }
+
+/*----------------Usuarios-----------------*/
+header input {
+  flex-grow: 1;
+}
+
+h1 {
+  margin: 0.5rem 0;
+}
+
+figure img {
+  max-width: 100%;
+}
+
+legend,
+p label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+p label>* {
+  display: block;
+  font-weight: normal;
+  font-size: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+}

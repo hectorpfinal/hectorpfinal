@@ -64,3 +64,8 @@ label.fila,
     list-style-type: none;
     padding: 3rem 5rem;
   }
+
+label.filarol{
+  display: flex;
+  gap: 1rem;
+}

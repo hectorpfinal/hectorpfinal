@@ -119,7 +119,7 @@ export function
       "checked" : "";
   return (/* html */
     `<li>
-      <label class="fila">
+      <label class="filarol">
         <input type="checkbox"
             name="rolIds"
             value="${cod(doc.id)}"

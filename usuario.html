@@ -55,32 +55,32 @@
                 <form action="" method="POST" id="form" name="forma">
                   <div class="form">
                       <h1>Puede editar o agregar información</h1>
+                      <div class="grupo"> 
                       <output name="cue">
+                      </div>  
+                      <div class="grupo">   
                       <figure id="figure">
                         <img alt="Falta el Avatar">
                       </figure>
-                      <p>
-                        <label>
-                          Avatar
+                      </div>
+                      <div class="grupo">   
+                          <p>>Avatar</p>
                           <input name="avatar"
                             type="file"
                             accept=".png,.jpg,.jpeg,.gif">
-                        </label>
-                      </p>
+                      </div>
                       <!--
                         Maneja una asociación a uno.
                       -->
-                      <p>
-                        <label>
-                          Alumno
+                      <div class="grupo">
+                        <p>Alumno</p>
                           <select
                             name="alumnoId">
                             <option>
                               Cargando…
                             </option>
                           </select>
-                        </label>
-                      </p>
+                      </div>
                       <!--
                         Maneja una asociación a
                         muchos.

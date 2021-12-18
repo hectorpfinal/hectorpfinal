@@ -61,42 +61,46 @@
                 <form action="" method="POST" id="form" name="forma">
                   <div class="form">
                       <h1>Puede editar o agregar información</h1>
-                      <div class="grupo">
-                          <input name="nombre" type="text" required><span class="barra"></span>
-                          <label for="">Nombre</label>
-                      </div>
-                      <div class="grupo">
-                          <input name="apellido" type="text" required><span class="barra"></span>
-                          <label for="">Apellido</label>
-                      </div>
-                      <div class="grupo">
-                        <input name="curp"type="text"required><span class="barra"></span>
-                        <label for="">CURP</label>
-                      </div>
-                      <div class="grupo">
-                        <input name="telefono"type="text" required><span class="barra"></span>
-                        <label for="">Telefono</label>
-                      </div>
-                      <div class="grupo">
-                        <input name="fechayhora" type="datetime-local" equired><span class="barra"></span>
-                        <label for="">Fecha y Hora</label>
-                      </div>
-                      <div class="grupo">
-                        <input name="doctor"type="text" list="doctores" required><span class="barra"></span>
-                      <label for="">Doctor</label>
-                      </div>
-                      <div class="grupo">
-                        <input name="motivo" type="text" required><span class="barra"></span>
-                        <label for="">Motivo de Cita</label>
-                      </div>
-                      <div class="grupo">
-                        <input name="correo" type="email" required><span class="barra"></span>
-                        <label for="">Correo Electrónico</label>
-                      </div>
-                      <div class="grupo">
-                        <input name="avatar" type="file" accept=".png,.jpg,.jpeg,.gif"><span class="barra"></span>
-                        <label for=""></label>
-                      </div>
+                      <output name="cue">
+                      <figure id="figure">
+                        <img alt="Falta el Avatar">
+                      </figure>
+                      <p>
+                        <label>
+                          Avatar
+                          <input name="avatar"
+                            type="file"
+                            accept=".png,.jpg,.jpeg,.gif">
+                        </label>
+                      </p>
+                      <!--
+                        Maneja una asociación a uno.
+                      -->
+                      <p>
+                        <label>
+                          Alumno
+                          <select
+                            name="alumnoId">
+                            <option>
+                              Cargando…
+                            </option>
+                          </select>
+                        </label>
+                      </p>
+                      <!--
+                        Maneja una asociación a
+                        muchos.
+                      -->
+                      <fieldset>
+                        <legend>Roles</legend>
+                        <ul id="listaRoles"
+                          class="checks">
+                          <li>
+                            <mi-progreso>
+                            </mi-progreso>
+                          </li>
+                        </ul>
+                      </fieldset>
                       <button class="guardar" type="submit">Guardar</button>
                   </div>
               </form>    
@@ -104,12 +108,6 @@
           </div>
     <mi-footer></mi-footer>
   </form>
-  <datalist id="doctores">
-    <option value="Arturo Arteaga López">
-      <option value="Diego Martinez Pérez">
-      <option value="Martín Hernandez Castillo">
-      <option value="Jorge García Mendez">
-      <option value="Diana Cortez Juarez">
   </datalist>
  <script type="module"
     src="js/CtrlUsuario.js">

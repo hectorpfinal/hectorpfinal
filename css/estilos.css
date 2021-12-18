@@ -347,7 +347,7 @@ input:focus~.barra::before{
   bottom: -80px;
   left: calc(50% - 90px);
   z-index: 1;
-}
+}*/
 
 .seccion-perfil-usuario .perfil-alumnos-portada .boton-portada-eliminar{
   position: absolute;
@@ -359,4 +359,4 @@ input:focus~.barra::before{
   background-color: rgba(0, 0, 0, .5);
   color: #fff;
   cursor: pointer;
-}*/
+}

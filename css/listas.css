@@ -2,7 +2,6 @@
 .checks {
   list-style-type: none;
   padding: 3;
-  text-align: center;
 }
 
 .lista {
@@ -59,4 +58,10 @@ label.fila,
 .vacio {
   font-size: 0.75rem;
   text-align: center;
+}
+
+.textorol{
+    list-style-type: none;
+    padding: 3;
+  }
 }

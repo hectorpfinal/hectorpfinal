@@ -32,7 +32,7 @@
   <link rel="stylesheet"
     href="css/estilos.css">
 </head>
-<body>
+<!--<body>
   <form name="forma">
     <mi-nav></mi-nav>
     <header>
@@ -63,7 +63,7 @@
     <!--
       Maneja una asociación a uno.
     -->
-    <p>
+ <!--   <p>
       <label>
         Alumno
         <select
@@ -78,7 +78,7 @@
       Maneja una asociación a
       muchos.
     -->
-    <fieldset>
+ <!--  <fieldset>
       <legend>Roles</legend>
       <ul id="listaRoles"
         class="checks">
@@ -92,6 +92,79 @@
   </form>
   <script type="module"
     src="js/CtrlUsuarioNuevo.js">
-    </script>
+    </script> -->
+    <body>
+      <mi-nav></mi-nav>
+      <form name="forma">
+      <section class="seccion-perfil-usuario">
+        <div class="perfil-usuario-header">
+            <div class="perfil-alumnos-portada">
+                <button type="button" class="boton-portada">
+                   <a href="alumnos.html">Cancelar</a>
+                </button>          
+            </div>
+        </div>
+        <div class="perfil-usuario-body">
+            <div class="perfil-registro-alumnos">
+                <h3>Paciente Nuevo</h3>    
+            </div>
+            <div class="perfil-registro-alumnos-info">
+                <form action="" method="POST" id="form" name="forma">
+                  <div class="form">
+                      <h1>Ingrese los datos solicitados</h1>
+                      <p>
+                        <label>
+                          Cue
+                          <input name="cue"
+                            type="email" required>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          Avatar
+                          <input name="avatar"
+                            type="file" required
+                            accept=".png,.jpg,.jpeg,.gif">
+                        </label>
+                      </p>
+                      <!--
+                        Maneja una asociación a uno.
+                      -->
+                      <p>
+                        <label>
+                          Alumno
+                          <select
+                            name="alumnoId">
+                            <option>
+                              Cargando…
+                            </option>
+                          </select>
+                        </label>
+                      </p>
+                      <!--
+                        Maneja una asociación a
+                        muchos.
+                      -->
+                     <fieldset>
+                        <legend>Roles</legend>
+                        <ul id="listaRoles"
+                          class="checks">
+                          <li>
+                            <mi-progreso>
+                            </mi-progreso>
+                          </li>
+                        </ul>
+                      </fieldset>
+          <mi-footer></mi-footer>
+        </form>
+        </section>
+        <script type="module"
+        src="js/CtrlUsuarioNuevo.js">
+        </script>
+      </body>
+      </html>
+      
+      
+
 </body>
 </html>

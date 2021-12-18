@@ -194,14 +194,14 @@ body {
   .seccion-perfil-usuario .perfil-alumnos {
     display: flex;
     flex-wrap: wrap;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 3rem 1rem 1rem 1rem;
     box-shadow: 0 0 12px rgba(0, 0, 0, .2);
     background-color: #fff;
     border-radius: 15px;
     width: 70%;
     position: relative;
     bottom: 3.2rem;
-    justify-content: center;
+    justify-content: right;
 }
 
 .seccion-perfil-usuario .perfil-alumnos-info{
@@ -333,21 +333,6 @@ input:focus~.barra::before{
 }
 
 /*-----------------Editar ALumno-------------*/
-/*.seccion-perfil-usuario .perfil-ind-avatar {
-  display: flex;
-  width: 180px;
-  height: 180px;
-  align-items: center;
-  justify-content: center;
-  border: 7px solid #FFFFFF;
-  background-color: #DFE5F2;
-  border-radius: 50%;
-  box-shadow: 0 0 12px rgba(0, 0, 0, .2);
-  position: absolute;
-  bottom: -80px;
-  left: calc(50% - 90px);
-  z-index: 1;
-}*/
 
 .seccion-perfil-usuario .perfil-alumnos-portada .boton-portada-eliminar{
   position: absolute;

@@ -24,12 +24,14 @@ a.fila:active {
 
 .primario {
   display: block;
-  font-size: 26rem 4rem;
+  font-size: 0.75rem;
+  padding: 2rem;
 }
 
 .secundario {
   display: block;
   font-size: 0.75rem;
+  padding: 2rem;
 }
 
 label.fila,

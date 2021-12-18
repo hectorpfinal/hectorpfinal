@@ -351,10 +351,6 @@ header input {
   flex-grow: 1;
 }
 
-h1 {
-  margin: 0.5rem 0;
-}
-
 figure img {
   max-width: 100%;
 }
